@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upwork – Find Talent & Find Work</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Neue+Haas+Grotesk:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="nav__logo">up<span>work</span></div>
+
+    <div class="nav__links">
+      <a href="#">Find Talent</a>
+      <a href="#">Find Work</a>
+      <a href="#">Why Upwork</a>
+      <a href="#">Enterprise</a>
+      <a href="#">Pricing</a>
+    </div>
+
+    <div class="nav__spacer"></div>
+
+    <div class="nav__actions">
+      <a href="#">Log In</a>
+      <a href="#" class="btn btn--outline">Sign Up</a>
+      <a href="#" class="btn btn--solid">Post a Job</a>
+    </div>
+
+    <!-- hamburger -->
+    <button class="nav__burger" id="burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- mobile menu -->
+  <div class="nav__mobile" id="mobileMenu">
+    <a href="#">Find Talent</a>
+    <a href="#">Find Work</a>
+    <a href="#">Why Upwork</a>
+    <a href="#">Enterprise</a>
+    <a href="#">Pricing</a>
+    <a href="#">Log In</a>
+    <a href="#" style="color:var(--green);font-weight:700;">Sign Up</a>
+  </div>
+
+  <!-- ─── HERO ──────────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero__img" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow"><i class="fa-solid fa-circle-check"></i> Trusted by 5M+ businesses</div>
+
+      <h1 class="hero__h1">
+        How work<br>
+        gets <em>done</em>
+      </h1>
+
+      <p class="hero__sub">
+        Connect with freelancers and agencies who bring your ideas to life —
+        from startups to Fortune 500 companies.
+      </p>
+
+      <div class="hero__ctas">
+        <a href="#" class="btn btn--solid">Get Started Free</a>
+        <a href="#" class="btn btn--white">Find Work</a>
+      </div>
+
+      <div class="hero__search">
+        <input type="text" placeholder="Search for any skill or role…" />
+        <button><i class="fa-solid fa-magnifying-glass"></i>&nbsp; Search</button>
+      </div>
+
+      <div class="hero__tags">
+        <span>Popular:</span>
+        <span class="hero__tag">Web Design</span>
+        <span class="hero__tag">React Developer</span>
+        <span class="hero__tag">Copywriter</span>
+        <span class="hero__tag">Video Editor</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TRUST BAR ─────────────────────────────────────────────────────────── -->
+  <div class="trust">
+    <span class="trust__label">Trusted by</span>
+    <div class="trust__logos">
+      <span class="trust__logo-text">Microsoft</span>
+      <span class="trust__logo-text">Airbnb</span>
+      <span class="trust__logo-text">Bissell</span>
+      <span class="trust__logo-text">Glassdoor</span>
+      <span class="trust__logo-text">GE</span>
+      <span class="trust__logo-text">Nasdaq</span>
+    </div>
+  </div>
+
+  <!-- ─── STATS ─────────────────────────────────────────────────────────────── -->
+  <div class="stats">
+    <div class="stat"><div class="stat__num">175+</div><div class="stat__label">Countries served</div></div>
+    <div class="stat"><div class="stat__num">5M+</div><div class="stat__label">Registered businesses</div></div>
+    <div class="stat"><div class="stat__num">$2.5B</div><div class="stat__label">Paid to freelancers</div></div>
+    <div class="stat"><div class="stat__num">10K+</div><div class="stat__label">Skills available</div></div>
+  </div>
+
+  <!-- ─── HOW IT WORKS ──────────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="how">
+      <div>
+        <p class="section__label">How it works</p>
+        <h2 class="section__h2">Find the right talent, fast</h2>
+        <p class="section__sub">Post a job, review proposals, and hire the best — or browse top profiles and invite them to apply.</p>
+
+        <div class="how__steps">
+          <div class="how__step">
+            <div class="how__num">1</div>
+            <div class="how__step-body">
+              <h4>Post a job (free)</h4>
+              <p>Describe what you need — skills, timeline, and budget. It's free and takes minutes.</p>
+            </div>
+          </div>
+          <div class="how__step">
+            <div class="how__num">2</div>
+            <div class="how__step-body">
+              <h4>Review top proposals</h4>
+              <p>Receive bids quickly. Use AI Match to get the best-fit freelancers right away.</p>
+            </div>
+          </div>
+          <div class="how__step">
+            <div class="how__num">3</div>
+            <div class="how__step-body">
+              <h4>Pay securely, every time</h4>
+              <p>Only release payment when you're 100% satisfied. Our protection covers you.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:32px;">
+          <a href="#" class="btn btn--solid">Post a Job</a>
+        </div>
+      </div>
+
+      <!-- dashboard mockup -->
+      <div class="how__visual">
+        <div class="how__visual-title">Top proposals for "React Developer"</div>
+
+        <div class="how__card">
+          <div class="how__card-icon"><i class="fa-solid fa-user-circle"></i></div>
+          <div class="how__card-body">
+            <strong>Sarah K. — React / Node.js</strong>
+            <span>⭐ 4.9 · 200+ jobs · $65/hr</span>
+          </div>
+          <span class="how__card-badge">Top Rated</span>
+        </div>
+
+        <div class="how__card">
+          <div class="how__card-icon"><i class="fa-solid fa-user-circle"></i></div>
+          <div class="how__card-body">
+            <strong>Marco D. — Full-Stack Dev</strong>
+            <span>⭐ 4.8 · 140+ jobs · $55/hr</span>
+          </div>
+          <span class="how__card-badge">Rising</span>
+        </div>
+
+        <div class="how__card">
+          <div class="how__card-icon"><i class="fa-solid fa-user-circle"></i></div>
+          <div class="how__card-body">
+            <strong>Yuki T. — Frontend Expert</strong>
+            <span>⭐ 5.0 · 90+ jobs · $80/hr</span>
+          </div>
+          <span class="how__card-badge">Expert</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CATEGORIES ────────────────────────────────────────────────────────── -->
+  <section class="section section--gray">
+    <p class="section__label">Browse by category</p>
+    <h2 class="section__h2">Find talent in any skill</h2>
+
+    <div class="cats__grid">
+      <div class="cat-card"><i class="fa-solid fa-code"></i><h4>Development & IT</h4><span>2.1M+ freelancers</span></div>
+      <div class="cat-card"><i class="fa-solid fa-palette"></i><h4>Design & Creative</h4><span>1.4M+ freelancers</span></div>
+      <div class="cat-card"><i class="fa-solid fa-pen-nib"></i><h4>Writing & Translation</h4><span>980K+ freelancers</span></div>
+      <div class="cat-card"><i class="fa-solid fa-chart-line"></i><h4>Sales & Marketing</h4><span>860K+ freelancers</span></div>
+      <div class="cat-card"><i class="fa-solid fa-headset"></i><h4>Admin & Support</h4><span>720K+ freelancers</span></div>
+      <div class="cat-card"><i class="fa-solid fa-video"></i><h4>Video & Audio</h4><span>440K+ freelancers</span></div>
+      <div class="cat-card"><i class="fa-solid fa-building"></i><h4>Finance & Accounting</h4><span>390K+ freelancers</span></div>
+      <div class="cat-card"><i class="fa-solid fa-graduation-cap"></i><h4>Education & Training</h4><span>310K+ freelancers</span></div>
+    </div>
+  </section>
+
+
+
+  <!-- ─── TALENT ─────────────────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="talents__header">
+      <div>
+        <p class="section__label">Featured talent</p>
+        <h2 class="section__h2">Hire top-rated professionals</h2>
+      </div>
+      <a href="#" class="btn btn--outline">Browse all talent</a>
+    </div>
+
+    <div class="talents__grid">
+      <!-- card 1 -->
+      <div class="talent-card">
+        <div class="talent-card__top">
+          <div class="talent-card__avatar">SJ</div>
+          <div>
+            <div class="talent-card__name">Sarah Johnson</div>
+            <div class="talent-card__role">UI/UX Designer</div>
+            <div class="talent-card__rate">$75/hr</div>
+          </div>
+        </div>
+        <div class="talent-card__stars">★★★★★ <span style="color:#5e6d55;font-size:.8rem;">5.0 (128 reviews)</span></div>
+        <div class="talent-card__tag-row">
+          <span class="tag">Figma</span><span class="tag">UI Design</span><span class="tag">Prototyping</span>
+        </div>
+      </div>
+
+      <!-- card 2 -->
+      <div class="talent-card">
+        <div class="talent-card__top">
+          <div class="talent-card__avatar">MC</div>
+          <div>
+            <div class="talent-card__name">Marco Chen</div>
+            <div class="talent-card__role">React Developer</div>
+            <div class="talent-card__rate">$90/hr</div>
+          </div>
+        </div>
+        <div class="talent-card__stars">★★★★★ <span style="color:#5e6d55;font-size:.8rem;">4.9 (204 reviews)</span></div>
+        <div class="talent-card__tag-row">
+          <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Node.js</span>
+        </div>
+      </div>
+
+      <!-- card 3 -->
+      <div class="talent-card">
+        <div class="talent-card__top">
+          <div class="talent-card__avatar">AP</div>
+          <div>
+            <div class="talent-card__name">Aisha Patel</div>
+            <div class="talent-card__role">Copywriter</div>
+            <div class="talent-card__rate">$55/hr</div>
+          </div>
+        </div>
+        <div class="talent-card__stars">★★★★★ <span style="color:#5e6d55;font-size:.8rem;">5.0 (89 reviews)</span></div>
+        <div class="talent-card__tag-row">
+          <span class="tag">SEO Writing</span><span class="tag">Content Strategy</span>
+        </div>
+      </div>
+
+      <!-- card 4 -->
+      <div class="talent-card">
+        <div class="talent-card__top">
+          <div class="talent-card__avatar">RL</div>
+          <div>
+            <div class="talent-card__name">Ryo Lim</div>
+            <div class="talent-card__role">Motion Designer</div>
+            <div class="talent-card__rate">$70/hr</div>
+          </div>
+        </div>
+        <div class="talent-card__stars">★★★★½ <span style="color:#5e6d55;font-size:.8rem;">4.8 (61 reviews)</span></div>
+        <div class="talent-card__tag-row">
+          <span class="tag">After Effects</span><span class="tag">3D</span><span class="tag">Branding</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONIALS ──────────────────────────────────────────────────────── -->
+  <section class="section section--green">
+    <p class="section__label">Success stories</p>
+    <h2 class="section__h2">Businesses love Upwork</h2>
+
+    <div class="testimonials__grid">
+      <div class="testi-card">
+        <p class="testi-card__quote">We found a world-class designer in 48 hours. The quality blew our team away and we shipped two weeks ahead of schedule.</p>
+        <div class="testi-card__author">
+          <div class="testi-card__icon">TK</div>
+          <div>
+            <div class="testi-card__name">Tom K.</div>
+            <div class="testi-card__meta">CTO, FinTech startup</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <p class="testi-card__quote">Upwork helped us scale content production 10× without hiring full-time staff. It's our secret weapon.</p>
+        <div class="testi-card__author">
+          <div class="testi-card__icon">LM</div>
+          <div>
+            <div class="testi-card__name">Laura M.</div>
+            <div class="testi-card__meta">Head of Marketing, SaaS Co.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <p class="testi-card__quote">The payment protection gave me peace of mind on my first hire. Now I use Upwork for every project.</p>
+        <div class="testi-card__author">
+          <div class="testi-card__icon">DW</div>
+          <div>
+            <div class="testi-card__name">David W.</div>
+            <div class="testi-card__meta">Founder, eCommerce brand</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA BANNER ────────────────────────────────────────────────────────── -->
+  <div class="cta-banner">
+    <h2 class="cta-banner__h2">Ready to grow your<br><em>business or career?</em></h2>
+    <div class="cta-banner__btns">
+      <a href="#" class="btn btn--solid">Hire a Freelancer</a>
+      <a href="#" class="btn btn--white">Find Work</a>
+    </div>
+  </div>
+
+  <!-- ─── FOOTER ─────────────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-logo">up<span>work</span></div>
+        <p class="footer__tagline">The world's work marketplace. Connecting businesses with independent talent.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="footer__social"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="footer__social"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="footer__social"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h5>For Clients</h5>
+        <ul>
+          <li><a href="#">How to Hire</a></li>
+          <li><a href="#">Talent Marketplace</a></li>
+          <li><a href="#">Project Catalog</a></li>
+          <li><a href="#">Hire an Agency</a></li>
+          <li><a href="#">Enterprise</a></li>
+          <li><a href="#">Payroll Services</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h5>For Talent</h5>
+        <ul>
+          <li><a href="#">How to Find Work</a></li>
+          <li><a href="#">Direct Contracts</a></li>
+          <li><a href="#">Find Freelance Jobs</a></li>
+          <li><a href="#">Win Work with AI</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Upwork Blog</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Upwork Academy</a></li>
+          <li><a href="#">Research</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Leadership</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span class="footer__copy">© 2026 Upwork Inc. — Clone for learning purposes --------- Developed By Muneer Usman</span>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Settings</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── MOBILE NAV JS ──────────────────────────────────────────────────────── -->
+  <script src="script.js"></script>
+</body>
+</html>
